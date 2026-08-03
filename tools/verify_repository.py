@@ -7,15 +7,41 @@ import hashlib
 import json
 import math
 import re
+import subprocess
 from pathlib import Path
 
 
-def digest(path: Path) -> str:
-    h = hashlib.sha256()
-    with path.open("rb") as handle:
-        for block in iter(lambda: handle.read(1024 * 1024), b""):
-            h.update(block)
-    return h.hexdigest()
+def committed_digest(root: Path, path: Path) -> str:
+    if not (root / ".git").exists():
+        data = path.read_bytes()
+        try:
+            data.decode("utf-8")
+        except UnicodeDecodeError:
+            pass
+        else:
+            data = data.replace(b"\r\n", b"\n")
+        return hashlib.sha256(data).hexdigest()
+    relative = path.relative_to(root).as_posix()
+    result = subprocess.run(
+        ["git", "show", f"HEAD:{relative}"],
+        cwd=root,
+        check=False,
+        capture_output=True,
+    )
+    if result.returncode != 0:
+        return ""
+    return hashlib.sha256(result.stdout).hexdigest()
+
+
+def worktree_changed(root: Path, path: Path) -> bool:
+    if not (root / ".git").exists():
+        return False
+    relative = path.relative_to(root).as_posix()
+    return subprocess.run(
+        ["git", "diff", "--quiet", "--no-ext-diff", "HEAD", "--", relative],
+        cwd=root,
+        check=False,
+    ).returncode != 0
 
 
 def walk_numbers(value, location: str, failures: list[str]) -> int:
@@ -61,7 +87,9 @@ def main() -> int:
         path = root / item["path"]
         if not path.is_file():
             failures.append(f"missing source file: {item['path']}")
-        elif digest(path) != item["sha256"]:
+        elif worktree_changed(root, path):
+            failures.append(f"source file differs from the committed snapshot: {item['path']}")
+        elif committed_digest(root, path) != item["sha256"]:
             failures.append(f"source hash changed: {item['path']}")
 
     numeric_count = 0
