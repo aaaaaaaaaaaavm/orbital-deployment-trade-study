@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, cite this repository and its VOLLEY source snapshot."
+title: "Orbital Deployment Trade Study"
+type: software
+authors:
+  - family-names: Mishra
+    given-names: Adityavardhan
+license: MIT
+repository-code: "https://github.com/aaaaaaaaaaaavm/orbital-deployment-trade-study"
+version: 0.1.0
+date-released: 2026-08-03

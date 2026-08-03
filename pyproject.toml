@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orbital-deployment-trade-study"
+version = "0.1.0"
+description = "Preliminary orbital deployment, recoil, and internal-mass trade calculations"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Adityavardhan Mishra"}]
+dependencies = []
+
+[project.optional-dependencies]
+dev = []
+reference = ["numpy>=2,<3", "scipy>=1.17", "matplotlib>=3.8", "magpylib>=5,<6", "requests>=2.32"]
+
+[project.scripts]
+orbital-trade = "orbital_trade.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

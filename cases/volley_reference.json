@@ -1,0 +1,14 @@
+{
+  "altitude_m": 500000.0,
+  "deployment_delta_v_m_s": 16.388,
+  "phase_deg": 30.0,
+  "payload_mass_kg": 4.0,
+  "host_mass_kg": 500.0,
+  "internal_move": {
+    "mass_kg": 9.445,
+    "distance_m": 1.5,
+    "duration_s": 6.0,
+    "lever_arm_m": 0.166,
+    "combined_inertia_kg_m2": 329.66843454166667
+  }
+}
