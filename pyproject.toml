@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "orbital-deployment-trade-study"
-version = "0.1.0"
+version = "0.1.1"
 description = "Preliminary orbital deployment, recoil, and internal-mass trade calculations"
 readme = "README.md"
 requires-python = ">=3.11"

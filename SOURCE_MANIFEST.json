@@ -1,10 +1,10 @@
 {
   "source_repository": "aaaaaaaaaaaavm/VOLLEY",
-  "base_commit": "d82877af803ab591217514c17c8186f1098e025d",
+  "base_commit": "aa22a069e5d2b4e4c58428904fedeafbcf594e46",
   "snapshot_date": "2026-08-03",
-  "snapshot_kind": "reviewed working-tree snapshot",
-  "working_tree_changed_paths": 76,
-  "note": "The snapshot includes reviewed numerical corrections not yet represented by a VOLLEY commit. File hashes below, not an invented commit identifier, define it.",
+  "snapshot_kind": "commit snapshot",
+  "working_tree_changed_paths": 0,
+  "note": "Every retained file is byte-identical to the corresponding blob in VOLLEY commit aa22a06. Per-file SHA-256 hashes and the aggregate snapshot hash provide a second identity check.",
   "snapshot_sha256": "3e6b8a41f3de1f3db9eb0068a22ee1dbeeb92c577f60d44aeaae54db0b0db98a",
   "files": [
     {
