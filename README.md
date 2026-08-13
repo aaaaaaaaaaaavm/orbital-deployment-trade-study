@@ -3,7 +3,7 @@
 <p align="center"><img src="reference/volley/paper/figures/F04_life.png" alt="Corrected VOLLEY orbital-decay reference" width="100%"></p>
 
 [![CI](https://github.com/aaaaaaaaaaaavm/orbital-deployment-trade-study/actions/workflows/ci.yml/badge.svg)](https://github.com/aaaaaaaaaaaavm/orbital-deployment-trade-study/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](pyproject.toml)
 [![Evidence: model only](https://img.shields.io/badge/evidence-model%20only%2C%20unverified-red.svg)](docs/PROVENANCE.md)
 
@@ -84,3 +84,15 @@ See [summary](SUMMARY.md), [validation](docs/VALIDATION.md),
 ## License
 
 MIT. External tools and public orbital data retain their own terms.
+
+## Licence
+
+**CC BY 4.0** — full text in [`LICENSE`](LICENSE), attribution form in [`NOTICE`](NOTICE).
+Attribution requires credit, a link to the licence, and **an indication of whether changes were
+made**.
+
+**Not retroactive:** snapshots taken before this change remain available under the MIT licence
+they carried at the time, retained at [`LICENSE-MIT-superseded`](LICENSE-MIT-superseded).
+
+This repository carries copies of VOLLEY analysis code under `reference/volley/`. CC BY 4.0 does
+not license patent rights, which is why a patent-granting licence was not used here.
