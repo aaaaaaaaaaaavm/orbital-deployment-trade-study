@@ -1,6 +1,6 @@
 {
   "altitude_m": 500000.0,
-  "deployment_delta_v_m_s": 16.388,
+  "deployment_delta_v_m_s": 16.029,
   "phase_deg": 30.0,
   "payload_mass_kg": 4.0,
   "host_mass_kg": 500.0,

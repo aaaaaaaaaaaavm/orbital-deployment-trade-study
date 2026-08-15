@@ -23,6 +23,22 @@ VOLLEY's astrodynamics record mixes four questions that do not have the same evi
 3. what linear recoil magnitude the host receives;
 4. what ideal angular motion follows an internal mass transfer.
 
+> ### Boundary added 2026-08-14: phase drift is not the cheapest route to phase
+>
+> Question 2 below computes what it says it computes, and **a VOLLEY analysis has since shown it
+> is the wrong comparator for a deployment product.** Satellites released at different times from
+> the same host arrive at different true anomalies **in the same orbit**, for no velocity at all:
+> at 450 km the in-track rate is **0.0641 °/s**, so **30° costs 468 seconds of waiting** against
+> 1.38 days by commanded differential velocity.
+>
+> **Release timing also gives a better answer, not just a cheaper one.** It sets a static offset;
+> a differential sets a **rate** — 21.75 °/day at 10 m/s — that never stops and that a
+> propulsion-less satellite cannot null.
+>
+> **What a differential impulse buys that a clock cannot is the orbit itself**: +28.8 km of
+> semi-major axis and a 1.602 lifetime multiplier against 0 m and 1.0000. Question 1, not
+> question 2, is where the value is. VOLLEY records this as **P56**.
+
 The first three are useful screening calculations. The fourth is here because a VOLLEY audit
 found that peak rate had been mistaken for residual rate. A symmetric closed move returns to
 **zero ideal residual body rate** but leaves an attitude offset. That correction removed a
