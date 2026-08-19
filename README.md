@@ -97,10 +97,6 @@ See [summary](SUMMARY.md), [validation](docs/VALIDATION.md),
 [toolchain](docs/TOOLCHAIN.md), [provenance](docs/PROVENANCE.md), and
 [open problems](OPEN_PROBLEMS.md).
 
-## License
-
-MIT. External tools and public orbital data retain their own terms.
-
 ## Licence
 
 **CC BY 4.0** — full text in [`LICENSE`](LICENSE), attribution form in [`NOTICE`](NOTICE).
