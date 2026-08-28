@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="920" viewBox="0 0 1600 920">
+<rect width="1600" height="920" fill="#07111b"/>
+<text x="72" y="78" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="24" font-weight="700" text-anchor="start">ORBITAL DEPLOYMENT TRADE STUDY</text>
+<text x="72" y="124" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="34" font-weight="600" text-anchor="start">One case file, three questions that should not be collapsed into one.</text>
+<text x="72" y="162" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="400" text-anchor="start">Two-body orbit geometry · host recoil · closed internal-mass disturbance</text>
+<rect x="72" y="214" width="704" height="390" rx="18" fill="#0c1d2a" stroke="#38d6e8"/>
+<text x="100" y="260" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="18" font-weight="700" text-anchor="start">VOLLEY REFERENCE</text>
+<text x="100" y="302" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="25" font-weight="650" text-anchor="start">16.029 m/s tangential release</text>
+<text x="100" y="338" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="16" font-weight="400" text-anchor="start">500.0 km perigee</text>
+<text x="748" y="338" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="16" font-weight="400" text-anchor="end">558.2 km apogee</text>
+<line x1="100" y1="370" x2="748" y2="370" stroke="#294a5d" stroke-width="8" stroke-linecap="round"/>
+<line x1="100" y1="370" x2="748" y2="370" stroke="#38d6e8" stroke-width="8" stroke-linecap="round"/>
+<text x="100" y="400" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="14" font-weight="650" text-anchor="start">Δ altitude 58.2 km</text>
+<text x="748" y="400" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="400" text-anchor="end">altitude span</text>
+<text x="100" y="450" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="650" text-anchor="start">PHASE DRIFT</text>
+<text x="748" y="450" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="650" text-anchor="end">34.61° / day</text>
+<text x="100" y="488" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="650" text-anchor="start">HOST RECOIL</text>
+<text x="748" y="488" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="650" text-anchor="end">128.23 mm/s</text>
+<text x="100" y="526" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="650" text-anchor="start">PEAK BODY RATE</text>
+<text x="748" y="526" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="650" text-anchor="end">0.1362°/s</text>
+<text x="100" y="564" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="650" text-anchor="start">IDEAL RESIDUAL RATE</text>
+<text x="748" y="564" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="650" text-anchor="end">0.0°/s</text>
+<rect x="816" y="214" width="704" height="390" rx="18" fill="#0c1d2a" stroke="#9b8cff"/>
+<text x="844" y="260" fill="#9b8cff" font-family="Inter,Segoe UI,sans-serif" font-size="18" font-weight="700" text-anchor="start">HOSTED 6U EXAMPLE</text>
+<text x="844" y="302" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="25" font-weight="650" text-anchor="start">5.000 m/s tangential release</text>
+<text x="844" y="338" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="16" font-weight="400" text-anchor="start">550.0 km perigee</text>
+<text x="1492" y="338" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="16" font-weight="400" text-anchor="end">568.3 km apogee</text>
+<line x1="844" y1="370" x2="1492" y2="370" stroke="#294a5d" stroke-width="8" stroke-linecap="round"/>
+<line x1="844" y1="370" x2="1492" y2="370" stroke="#9b8cff" stroke-width="8" stroke-linecap="round"/>
+<text x="844" y="400" fill="#9b8cff" font-family="Inter,Segoe UI,sans-serif" font-size="14" font-weight="650" text-anchor="start">Δ altitude 18.3 km</text>
+<text x="1492" y="400" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="400" text-anchor="end">altitude span</text>
+<text x="844" y="450" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="650" text-anchor="start">PHASE DRIFT</text>
+<text x="1492" y="450" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="650" text-anchor="end">10.72° / day</text>
+<text x="844" y="488" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="650" text-anchor="start">HOST RECOIL</text>
+<text x="1492" y="488" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="650" text-anchor="end">50.00 mm/s</text>
+<text x="844" y="526" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="650" text-anchor="start">PEAK BODY RATE</text>
+<text x="1492" y="526" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="650" text-anchor="end">0.0035°/s</text>
+<text x="844" y="564" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="650" text-anchor="start">IDEAL RESIDUAL RATE</text>
+<text x="1492" y="564" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="650" text-anchor="end">0.0°/s</text>
+<rect x="72" y="646" width="1452" height="188" rx="18" fill="#091720" stroke="#21465b"/>
+<text x="104" y="694" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="700" text-anchor="start">THE USEFUL SEPARATION</text>
+<text x="104" y="736" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="25" font-weight="600" text-anchor="start">A clock can create phase offset. A commanded release impulse changes orbital energy.</text>
+<text x="104" y="780" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="400" text-anchor="start">This screen prices neither conjunction risk nor the atmosphere, J₂, covariance, flexible modes or host control.</text>
+<text x="1494" y="878" fill="#ff6b6b" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="650" text-anchor="end">PRELIMINARY MODEL OUTPUT · NOT FLIGHT-SAFETY ANALYSIS</text>
+</svg>

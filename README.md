@@ -1,6 +1,6 @@
 # Orbital Deployment Trade Study
 
-<p align="center"><img src="reference/volley/paper/figures/F04_life.png" alt="Corrected VOLLEY orbital-decay reference" width="100%"></p>
+<p align="center"><img src="figures/deployment-trade.svg" alt="Two-body orbital deployment, host recoil and internal-mass screens for two committed cases" width="100%"></p>
 
 [![CI](https://github.com/aaaaaaaaaaaavm/orbital-deployment-trade-study/actions/workflows/ci.yml/badge.svg)](https://github.com/aaaaaaaaaaaavm/orbital-deployment-trade-study/actions/workflows/ci.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
@@ -45,6 +45,12 @@ The first three are useful screening calculations. The fourth is here because a 
 found that peak rate had been mistaken for residual rate. A symmetric closed move returns to
 **zero ideal residual body rate** but leaves an attitude offset. That correction removed a
 false 18.1 s cadence floor; it did not produce a host-controller or structural-settling model.
+
+<p align="center"><img src="reference/volley/paper/figures/F04_life.png" alt="Corrected VOLLEY orbital-decay reference" width="100%"></p>
+
+<p align="center"><sub>The overview is regenerated from both committed cases by
+<code>tools/generate_readme_figure.py</code>. The lifetime plot is retained from the detailed
+VOLLEY reference. Both are model output, not flight evidence.</sub></p>
 
 ## What the calculator does
 
