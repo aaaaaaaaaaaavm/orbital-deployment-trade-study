@@ -14,6 +14,15 @@ recoil and the rigid-body disturbance from a closed internal mass move.
 replace a launch-provider analysis or establish flight safety. Atmosphere, covariance,
 flexible modes and host control require higher-fidelity tools and mission data.
 
+<p align="center">
+  <img src="figures/orbit-envelope.svg" alt="Two-body altitude span and phase drift across a 0 to 20 metre-per-second tangential deployment sweep" width="49%">
+  <img src="figures/disturbance-budget.svg" alt="Host recoil, peak body rate and attitude offset for the two committed deployment cases" width="49%">
+</p>
+
+<p align="center"><sub>The left sweep separates orbital-energy change from accumulated phase.
+The right ledger separates external release recoil from the closed internal-mass disturbance.
+All curves and bars are regenerated from the two committed cases.</sub></p>
+
 ## Why this exists
 
 VOLLEY's astrodynamics record mixes four questions that do not have the same evidence:
