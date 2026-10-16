@@ -58,7 +58,7 @@ def render() -> str:
         perigee = orbit["perigee_altitude_m"] / 1000.0
         apogee = orbit["apogee_altitude_m"] / 1000.0
         out += [
-            txt(x + 28, y + 88, f"{case['deployment_delta_v_m_s']:.3f} m/s tangential release", 25, INK, 650),
+            txt(x + 28, y + 88, f"{case['deployment_delta_v_m_s']:.3f} m/s inertial impulse", 25, INK, 650),
             txt(x + 28, y + 124, f"{perigee:.1f} km perigee", 16, MUTED),
             txt(x + 676, y + 124, f"{apogee:.1f} km apogee", 16, MUTED, 400, "end"),
         ]
@@ -81,7 +81,7 @@ def render() -> str:
     out += [
         box(72, 646, 1452, 188, fill="#091720", stroke="#21465b"),
         txt(104, 694, "THE USEFUL SEPARATION", 15, CYAN, 700),
-        txt(104, 736, "A clock can create phase offset. A commanded release impulse changes orbital energy.", 25, INK, 600),
+        txt(104, 736, "Compare every payload at a common epoch and count host manoeuvres.", 25, INK, 600),
         txt(104, 780, "This screen prices neither conjunction risk nor the atmosphere, J₂, covariance, flexible modes or host control.", 19, MUTED),
         txt(1494, 878, "PRELIMINARY MODEL OUTPUT · NOT FLIGHT-SAFETY ANALYSIS", 15, RED, 650, "end"),
         "</svg>",

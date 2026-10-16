@@ -5,7 +5,7 @@
 <text x="72" y="162" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="400" text-anchor="start">Two-body orbit geometry · host recoil · closed internal-mass disturbance</text>
 <rect x="72" y="214" width="704" height="390" rx="18" fill="#0c1d2a" stroke="#38d6e8"/>
 <text x="100" y="260" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="18" font-weight="700" text-anchor="start">VOLLEY REFERENCE</text>
-<text x="100" y="302" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="25" font-weight="650" text-anchor="start">16.029 m/s tangential release</text>
+<text x="100" y="302" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="25" font-weight="650" text-anchor="start">16.029 m/s inertial impulse</text>
 <text x="100" y="338" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="16" font-weight="400" text-anchor="start">500.0 km perigee</text>
 <text x="748" y="338" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="16" font-weight="400" text-anchor="end">558.2 km apogee</text>
 <line x1="100" y1="370" x2="748" y2="370" stroke="#294a5d" stroke-width="8" stroke-linecap="round"/>
@@ -22,7 +22,7 @@
 <text x="748" y="564" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="650" text-anchor="end">0.0°/s</text>
 <rect x="816" y="214" width="704" height="390" rx="18" fill="#0c1d2a" stroke="#9b8cff"/>
 <text x="844" y="260" fill="#9b8cff" font-family="Inter,Segoe UI,sans-serif" font-size="18" font-weight="700" text-anchor="start">HOSTED 6U EXAMPLE</text>
-<text x="844" y="302" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="25" font-weight="650" text-anchor="start">5.000 m/s tangential release</text>
+<text x="844" y="302" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="25" font-weight="650" text-anchor="start">5.000 m/s inertial impulse</text>
 <text x="844" y="338" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="16" font-weight="400" text-anchor="start">550.0 km perigee</text>
 <text x="1492" y="338" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="16" font-weight="400" text-anchor="end">568.3 km apogee</text>
 <line x1="844" y1="370" x2="1492" y2="370" stroke="#294a5d" stroke-width="8" stroke-linecap="round"/>
@@ -39,7 +39,7 @@
 <text x="1492" y="564" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="650" text-anchor="end">0.0°/s</text>
 <rect x="72" y="646" width="1452" height="188" rx="18" fill="#091720" stroke="#21465b"/>
 <text x="104" y="694" fill="#38d6e8" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="700" text-anchor="start">THE USEFUL SEPARATION</text>
-<text x="104" y="736" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="25" font-weight="600" text-anchor="start">A clock can create phase offset. A commanded release impulse changes orbital energy.</text>
+<text x="104" y="736" fill="#e8f0f7" font-family="Inter,Segoe UI,sans-serif" font-size="25" font-weight="600" text-anchor="start">Compare every payload at a common epoch and count host manoeuvres.</text>
 <text x="104" y="780" fill="#8fa7ba" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="400" text-anchor="start">This screen prices neither conjunction risk nor the atmosphere, J₂, covariance, flexible modes or host control.</text>
 <text x="1494" y="878" fill="#ff6b6b" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="650" text-anchor="end">PRELIMINARY MODEL OUTPUT · NOT FLIGHT-SAFETY ANALYSIS</text>
 </svg>

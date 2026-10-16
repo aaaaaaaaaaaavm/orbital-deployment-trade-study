@@ -32,23 +32,20 @@ VOLLEY's astrodynamics record mixes four questions that do not have the same evi
 3. what linear recoil magnitude the host receives;
 4. what ideal angular motion follows an internal mass transfer.
 
-> ### Boundary added 2026-08-14: phase drift is not the cheapest route to phase
->
-> Question 2 below computes what it says it computes, and **a VOLLEY analysis has since shown it
-> is the wrong comparator for a deployment product.** Satellites released at different times from
-> the same host arrive at different true anomalies **in the same orbit**, for no velocity at all:
-> at 450 km the in-track rate is **0.0641 °/s**, so **30° costs 468 seconds of waiting** against
-> 1.38 days by commanded differential velocity.
->
-> **Release timing also gives a better answer, not just a cheaper one.** It sets a static offset;
-> a differential sets a **rate** — 21.75 °/day at 10 m/s — that never stops and that a
-> propulsion-less satellite cannot null.
->
-> **What a differential impulse buys that a clock cannot is a commanded change in orbital energy**:
-> +28.8 km of semi-major axis and a 1.602 lifetime multiplier, against 0 m and 1.0000 for timed
-> release. *That is a statement about what a deployment interface can command — drag, J<sub>2</sub>
-> and solar radiation pressure change orbital elements too, and question 1 below prices none of
-> them.* Question 1, not question 2, is where the value is. VOLLEY records this as **P56**.
+### Common-epoch comparison boundary
+
+Release time alone does not create a fixed along-track separation for two passive objects
+released with identical states from the same unmanoeuvred circular host. The first object
+continues around the orbit while the host advances; comparing states at their different
+release epochs confuses elapsed orbital motion with separation at a common epoch.
+The former “30 degrees from 468 seconds of waiting” argument is withdrawn.
+
+The phase-drift output here is an ideal mean-motion difference after an imposed inertial
+impulse. It is not a complete delivery-state comparison or an economic advantage claim.
+A fair mission comparison propagates every payload to the same epoch and counts host
+manoeuvres, release dispersion, installed mass, energy and operational constraints.
+Lifetime predictions in retained source snapshots are model results, not measured service
+benefits or results of this dependency-free calculator.
 
 The first three are useful screening calculations. The fourth is here because a VOLLEY audit
 found that peak rate had been mistaken for residual rate. A symmetric closed move returns to
@@ -65,7 +62,7 @@ VOLLEY reference. Both are model output, not flight evidence.</sub></p>
 
 - derives the post-impulse ellipse from specific energy and angular momentum;
 - computes phase-drift time from the difference in mean motion;
-- reports host recoil as a magnitude from linear-momentum conservation;
+- reports exact finite-host recoil from a relative separation speed;
 - separates transient peak rate, attitude offset and ideal residual rate;
 - rejects unbound or Earth-intersecting trajectories rather than returning plausible numbers;
 - includes one VOLLEY reference case and one independent hosted-6U example.
@@ -87,6 +84,20 @@ python tools/verify_repository.py
 
 The tests cover zero impulse, prograde and retrograde geometry, unbound rejection, momentum
 conservation, recoil sign convention and the corrected closed internal move.
+
+## Velocity and mass conventions
+
+`host_recoil(payload_mass_kg, deployment_velocity_m_s, host_mass_kg)` accepts a
+signed **payload-to-host relative** speed. The remaining host excludes the released payload.
+For payload mass m, remaining host M and relative speed u, the recoil magnitude is
+`m * abs(u) / (M + m)`. The payload inertial change has magnitude `M * abs(u) / (M + m)`.
+The former `m * u / M` calculation treated a relative speed as an inertial change.
+
+Case-file `deployment_delta_v_m_s` instead means the **inertial payload impulse** used by
+`tangential_impulse`. `evaluate` explicitly converts it to relative speed for the recoil
+function and returns `relative_separation_velocity_m_s`. Existing case orbit curves therefore
+retain their declared inertial inputs; they do not represent validated release performance.
+Apsis ordering follows final radii, including impulses that reverse orbital direction.
 
 ## Evidence boundary
 

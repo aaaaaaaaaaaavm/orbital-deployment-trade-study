@@ -1,5 +1,9 @@
 # Change log / audit record
 
+## 16 October 2026
+
+Correct finite-host recoil and direction-reversed apsis ordering; define inertial case inputs and withdraw the timing-only common-epoch claim.
+
 I record changes here by cause and consequence. The retained FAIL and VOID outcomes are part of
 the result, not material to be removed when the repository is cleaned up.
 

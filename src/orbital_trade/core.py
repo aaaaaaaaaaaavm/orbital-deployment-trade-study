@@ -37,8 +37,8 @@ def tangential_impulse(
 ) -> dict[str, float]:
     """Apply a tangential impulse to a circular orbit.
 
-    Positive delta-v places the impulse point at perigee; negative delta-v places it at
-    apogee. Unbound and Earth-intersecting results are rejected because neither belongs in
+    Apsis ordering follows the final state, including impulses that reverse direction.
+    delta_v_m_s is the payload inertial velocity change, not relative release speed. Unbound and Earth-intersecting results are rejected because neither belongs in
     a deployment trade presented as an orbit.
     """
     altitude_m = float(altitude_m)
@@ -64,10 +64,7 @@ def tangential_impulse(
     if opposite_radius <= R_EARTH:
         raise ValueError("the post-impulse orbit intersects Earth")
 
-    if delta_v_m_s >= 0.0:
-        perigee, apogee = radius, opposite_radius
-    else:
-        perigee, apogee = opposite_radius, radius
+    perigee, apogee = sorted((radius, opposite_radius))
 
     initial_mean_motion = math.sqrt(MU_EARTH / radius**3)
     final_mean_motion = math.sqrt(MU_EARTH / semi_major_axis**3)
@@ -95,7 +92,11 @@ def host_recoil(
     deployment_velocity_m_s: float,
     host_mass_kg: float,
 ) -> float:
-    """Return host recoil delta-v magnitude from linear-momentum conservation."""
+    """Return exact host recoil magnitude for a signed relative separation speed.
+
+    deployment_velocity_m_s is payload velocity relative to the remaining host.
+    host_mass_kg excludes the released payload; external impulse is neglected.
+    """
     payload_mass_kg = float(payload_mass_kg)
     deployment_velocity_m_s = float(deployment_velocity_m_s)
     host_mass_kg = float(host_mass_kg)
@@ -106,7 +107,7 @@ def host_recoil(
     )
     if payload_mass_kg <= 0.0 or host_mass_kg <= 0.0:
         raise ValueError("masses must be positive")
-    return abs(payload_mass_kg * deployment_velocity_m_s / host_mass_kg)
+    return abs(payload_mass_kg * deployment_velocity_m_s / (host_mass_kg + payload_mass_kg))
 
 
 def internal_move(
@@ -162,15 +163,20 @@ def evaluate(case: dict) -> dict:
         case["deployment_delta_v_m_s"],
         case.get("phase_deg", 30.0),
     )
-    recoil = host_recoil(
-        case["payload_mass_kg"],
-        case["deployment_delta_v_m_s"],
-        case["host_mass_kg"],
-    )
+    # Case delta-v is the inertial payload change used by the orbit calculation.
+    # Convert once to relative speed before calling the relative-speed recoil API.
+    payload_mass = float(case["payload_mass_kg"])
+    host_mass = float(case["host_mass_kg"])
+    _finite(payload_mass_kg=payload_mass, host_mass_kg=host_mass)
+    if payload_mass <= 0.0 or host_mass <= 0.0:
+        raise ValueError("masses must be positive")
+    relative_speed = float(case["deployment_delta_v_m_s"]) * (host_mass + payload_mass) / host_mass
+    recoil = host_recoil(payload_mass, relative_speed, host_mass)
     move = internal_move(**case["internal_move"])
     return {
         "orbit": orbit,
         "host_recoil_m_s": recoil,
+        "relative_separation_velocity_m_s": relative_speed,
         "internal_move": move,
     }
 

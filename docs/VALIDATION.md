@@ -12,3 +12,8 @@
 
 Model-to-model agreement does not establish flight behavior. A launch-provider conjunction
 assessment requires operational ephemerides, covariance and mission-specific screening.
+
+Finite-host tests reconstruct payload and host momentum and relative speed over unequal and
+equal mass cases. Direction-reversal tests compare identical final speed magnitudes with
+opposite angular momentum. Case-convention tests check inertial-to-relative conversion.
+These implementation checks do not establish mission clearance, delivery accuracy or lifetime.

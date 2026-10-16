@@ -31,7 +31,7 @@ class OrbitalTradeTests(unittest.TestCase):
 
     def test_recoil_conserves_linear_momentum(self):
         recoil = host_recoil(4.0, 16.388, 500.0)
-        self.assertAlmostEqual(500.0 * recoil, 4.0 * 16.388, places=12)
+        self.assertAlmostEqual(500.0 * recoil, 4.0 * (16.388 - recoil), places=12)
 
     def test_recoil_is_reported_as_a_magnitude(self):
         self.assertEqual(
