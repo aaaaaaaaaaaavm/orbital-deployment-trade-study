@@ -136,3 +136,9 @@ they carried at the time, retained at [`LICENSE-MIT-superseded`](LICENSE-MIT-sup
 
 This repository carries copies of VOLLEY analysis code under `reference/volley/`. CC BY 4.0 does
 not license patent rights, which is why a patent-granting licence was not used here.
+
+## Figure generation
+
+Install `python -m pip install -e ".[figures]"`, then run
+`python tools/generate_readme_figure.py`. Figures are plain vector exports of local
+case calculations, with labelled axes and explicit model boundaries.
