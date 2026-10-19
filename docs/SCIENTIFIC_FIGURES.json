@@ -1,0 +1,42 @@
+{
+  "revision": "2026-10-19 scientific presentation edition",
+  "scope": "Selected current figure sets only. Retained historical graphics are not automatically certified compliant.",
+  "figures": [
+    {
+      "evidence_class": "Computed plot",
+      "caption": "Analytical overview: deployment trade",
+      "limitations": "First-order source-backed screen, not native mission/hardware validation.",
+      "sources": {
+        "tools/generate_readme_figure.py": "197119b76ce3e0ed19b43177326e1006de152b5cee5eaf5122c1a01588520f9a",
+        "tools/scientific.mplstyle": "d4860a7e8084c777d4b3875c211322351109204c77c76c7434cda50763c3c8b9"
+      },
+      "exports": {
+        "figures/deployment-trade.svg": "b8df8253231481cd7e7cdb9f7b9bf901a2f36fe3b640cea2752c5ca34903a9b7"
+      }
+    },
+    {
+      "evidence_class": "Computed plot",
+      "caption": "Analytical overview: disturbance budget",
+      "limitations": "First-order source-backed screen, not native mission/hardware validation.",
+      "sources": {
+        "tools/generate_readme_figure.py": "197119b76ce3e0ed19b43177326e1006de152b5cee5eaf5122c1a01588520f9a",
+        "tools/scientific.mplstyle": "d4860a7e8084c777d4b3875c211322351109204c77c76c7434cda50763c3c8b9"
+      },
+      "exports": {
+        "figures/disturbance-budget.svg": "6df770c75bf41eefb92ecf025587926505e6045854a64a98e2048fe1e0fd6b39"
+      }
+    },
+    {
+      "evidence_class": "Computed plot",
+      "caption": "Analytical overview: orbit envelope",
+      "limitations": "First-order source-backed screen, not native mission/hardware validation.",
+      "sources": {
+        "tools/generate_readme_figure.py": "197119b76ce3e0ed19b43177326e1006de152b5cee5eaf5122c1a01588520f9a",
+        "tools/scientific.mplstyle": "d4860a7e8084c777d4b3875c211322351109204c77c76c7434cda50763c3c8b9"
+      },
+      "exports": {
+        "figures/orbit-envelope.svg": "adfca607f33e014b031261be0b6b4ee27491bc97dbbcf71e9713b9259a22a4d5"
+      }
+    }
+  ]
+}

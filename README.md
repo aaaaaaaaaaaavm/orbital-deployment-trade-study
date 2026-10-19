@@ -142,3 +142,5 @@ not license patent rights, which is why a patent-granting licence was not used h
 Install `python -m pip install -e ".[figures]"`, then run
 `python tools/generate_readme_figure.py`. Figures are plain vector exports of local
 case calculations, with labelled axes and explicit model boundaries.
+
+[Scientific figures and documentation conventions](docs/FIGURE_STANDARD.md) · [Released figure sources](docs/SCIENTIFIC_FIGURES.json)
