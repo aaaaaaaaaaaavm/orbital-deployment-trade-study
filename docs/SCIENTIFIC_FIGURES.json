@@ -1,42 +1,69 @@
 {
-  "revision": "2026-10-19 scientific presentation edition",
+  "revision": "2026-10-23 current scientific presentation edition",
   "scope": "Selected current figure sets only. Retained historical graphics are not automatically certified compliant.",
   "figures": [
     {
-      "evidence_class": "Computed plot",
-      "caption": "Analytical overview: deployment trade",
+      "evidence_class": "Computed analytical screen",
+      "caption": "Two-body apogee increase versus payload inertial increment, alongside exact finite-host recoil versus relative separation speed; distinct horizontal-axis conventions.",
       "limitations": "First-order source-backed screen, not native mission/hardware validation.",
       "sources": {
-        "tools/generate_readme_figure.py": "197119b76ce3e0ed19b43177326e1006de152b5cee5eaf5122c1a01588520f9a",
-        "tools/scientific.mplstyle": "d4860a7e8084c777d4b3875c211322351109204c77c76c7434cda50763c3c8b9"
+        "tools/generate_readme_figure.py": "66ee51f2df16507916e4a16a80681d661b4fc4a0de20b3c4c9a96c7321ba0aa6",
+        "tools/scientific.mplstyle": "d4860a7e8084c777d4b3875c211322351109204c77c76c7434cda50763c3c8b9",
+        "cases/hosted_6u_example.json": "d21ef5d49e1ac567235968ceaf3e9db769721960f69db5175f7e425fcaa4f00b",
+        "cases/volley_reference.json": "a8ea30b5d980d26318e73c63e07a3f5433e3802349cb8fb52b38b013f14682a2",
+        "src/orbital_trade/__init__.py": "fbbeeab6ad4cab51d0d04ea5aa356892cc7414d7f20136b41ef375f8dcebb4dd",
+        "src/orbital_trade/core.py": "cbb5422913d1f079858370cdfe65d29c65cb06d5473e6988c42595555626b4e9"
       },
       "exports": {
-        "figures/deployment-trade.svg": "b8df8253231481cd7e7cdb9f7b9bf901a2f36fe3b640cea2752c5ca34903a9b7"
+        "figures/deployment-trade.svg": "176709b355349d52745b9c6f2f2e98d51138a392b05e8c017aba70d4f8300549",
+        "figures/deployment-trade.pdf": "185d9853d0b0340416f738feb330fe33d62348a695e8114076221004787c5f9e",
+        "figures/deployment-trade.png": "fad7262d58d067a9568059c0035269d326128aceca395c5459ba576fccf671c9"
       }
     },
     {
-      "evidence_class": "Computed plot",
-      "caption": "Analytical overview: disturbance budget",
+      "evidence_class": "Computed analytical screen",
+      "caption": "Exact finite-host recoil, peak ideal internal-move rate and ideal attitude offset for the historical 3U and hosted 6U cases.",
       "limitations": "First-order source-backed screen, not native mission/hardware validation.",
       "sources": {
-        "tools/generate_readme_figure.py": "197119b76ce3e0ed19b43177326e1006de152b5cee5eaf5122c1a01588520f9a",
-        "tools/scientific.mplstyle": "d4860a7e8084c777d4b3875c211322351109204c77c76c7434cda50763c3c8b9"
+        "tools/generate_readme_figure.py": "66ee51f2df16507916e4a16a80681d661b4fc4a0de20b3c4c9a96c7321ba0aa6",
+        "tools/scientific.mplstyle": "d4860a7e8084c777d4b3875c211322351109204c77c76c7434cda50763c3c8b9",
+        "cases/hosted_6u_example.json": "d21ef5d49e1ac567235968ceaf3e9db769721960f69db5175f7e425fcaa4f00b",
+        "cases/volley_reference.json": "a8ea30b5d980d26318e73c63e07a3f5433e3802349cb8fb52b38b013f14682a2",
+        "src/orbital_trade/__init__.py": "fbbeeab6ad4cab51d0d04ea5aa356892cc7414d7f20136b41ef375f8dcebb4dd",
+        "src/orbital_trade/core.py": "cbb5422913d1f079858370cdfe65d29c65cb06d5473e6988c42595555626b4e9"
       },
       "exports": {
-        "figures/disturbance-budget.svg": "6df770c75bf41eefb92ecf025587926505e6045854a64a98e2048fe1e0fd6b39"
+        "figures/disturbance-budget.svg": "22e5249f8c056a439923036b56a0d1043482c4696a1ebb6d2ffb10e35098bfbe",
+        "figures/disturbance-budget.pdf": "4021ffc17cd8b282f80002733d6890ce1623cd5656ce118ebf251ad5dd633e5c",
+        "figures/disturbance-budget.png": "8acbf734ae3935e98ef4487f7b9a4347afd5120c76f4f0ed2913485f68578953"
       }
     },
     {
-      "evidence_class": "Computed plot",
-      "caption": "Analytical overview: orbit envelope",
+      "evidence_class": "Computed analytical screen",
+      "caption": "Two-body apogee altitude and mean-motion drift at the two case altitudes for inertial tangential increments from 0 to 20 m/s.",
       "limitations": "First-order source-backed screen, not native mission/hardware validation.",
       "sources": {
-        "tools/generate_readme_figure.py": "197119b76ce3e0ed19b43177326e1006de152b5cee5eaf5122c1a01588520f9a",
-        "tools/scientific.mplstyle": "d4860a7e8084c777d4b3875c211322351109204c77c76c7434cda50763c3c8b9"
+        "tools/generate_readme_figure.py": "66ee51f2df16507916e4a16a80681d661b4fc4a0de20b3c4c9a96c7321ba0aa6",
+        "tools/scientific.mplstyle": "d4860a7e8084c777d4b3875c211322351109204c77c76c7434cda50763c3c8b9",
+        "cases/hosted_6u_example.json": "d21ef5d49e1ac567235968ceaf3e9db769721960f69db5175f7e425fcaa4f00b",
+        "cases/volley_reference.json": "a8ea30b5d980d26318e73c63e07a3f5433e3802349cb8fb52b38b013f14682a2",
+        "src/orbital_trade/__init__.py": "fbbeeab6ad4cab51d0d04ea5aa356892cc7414d7f20136b41ef375f8dcebb4dd",
+        "src/orbital_trade/core.py": "cbb5422913d1f079858370cdfe65d29c65cb06d5473e6988c42595555626b4e9"
       },
       "exports": {
-        "figures/orbit-envelope.svg": "adfca607f33e014b031261be0b6b4ee27491bc97dbbcf71e9713b9259a22a4d5"
+        "figures/orbit-envelope.svg": "d26752b4d07a88bf9c19fb9b1d65f688406c0b2308a8fc1856131c64bbfcae42",
+        "figures/orbit-envelope.pdf": "31806a1225783352430afa90597766bec9958c58426a66c17d5adc739f201d81",
+        "figures/orbit-envelope.png": "f8e9fca5d0482708e4f69c60294dac1a22c1e7812a4b8aed68be93e1dc29455e"
       }
     }
-  ]
+  ],
+  "presentation": {
+    "nominal_width_mm": 180,
+    "software": {
+      "Python": "3.12.14",
+      "Matplotlib": "3.10.8",
+      "NumPy": "2.3.5"
+    },
+    "historical_assets": "Retained dated source snapshots are outside this visual review."
+  }
 }

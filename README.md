@@ -1,6 +1,6 @@
 # Orbital Deployment Trade Study
 
-<p align="center"><img src="figures/deployment-trade.svg" alt="Two-body orbital deployment, host recoil and internal-mass screens for two committed cases" width="100%"></p>
+<p align="center"><a href="figures/deployment-trade.svg"><img src="figures/deployment-trade.svg" alt="Two-body orbital deployment, host recoil and internal-mass screens for two committed cases" width="100%"></a></p>
 
 [![CI](https://github.com/aaaaaaaaaaaavm/orbital-deployment-trade-study/actions/workflows/ci.yml/badge.svg)](https://github.com/aaaaaaaaaaaavm/orbital-deployment-trade-study/actions/workflows/ci.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
@@ -15,12 +15,12 @@ replace a launch-provider analysis or establish flight safety. Atmosphere, covar
 flexible modes and host control require higher-fidelity tools and mission data.
 
 <p align="center">
-  <img src="figures/orbit-envelope.svg" alt="Two-body altitude span and phase drift across a 0 to 20 metre-per-second tangential deployment sweep" width="49%">
-  <img src="figures/disturbance-budget.svg" alt="Host recoil, peak body rate and attitude offset for the two committed deployment cases" width="49%">
+  <a href="figures/orbit-envelope.svg"><img src="figures/orbit-envelope.svg" alt="Two-body altitude span and phase drift across a 0 to 20 metre-per-second tangential deployment sweep" width="100%"></a>
+  <a href="figures/disturbance-budget.svg"><img src="figures/disturbance-budget.svg" alt="Host recoil, peak body rate and attitude offset for the two committed deployment cases" width="100%"></a>
 </p>
 
-<p align="center"><sub>The left sweep separates orbital-energy change from accumulated phase.
-The right ledger separates external release recoil from the closed internal-mass disturbance.
+<p align="center"><sub>The orbit sweep shows two-body altitude and mean-motion responses.
+The disturbance bars separate external release recoil from the ideal closed internal-mass move.
 All curves and bars are regenerated from the two committed cases.</sub></p>
 
 ## Why this exists
@@ -141,6 +141,8 @@ not license patent rights, which is why a patent-granting licence was not used h
 
 Install `python -m pip install -e ".[figures]"`, then run
 `python tools/generate_readme_figure.py`. Figures are plain vector exports of local
-case calculations, with labelled axes and explicit model boundaries.
+case calculations at a 180 mm report width, with 10 pt plot labels and explicit model boundaries.
+Each figure is exported as editable SVG, embedded-font PDF and 300 dpi PNG.
+The local case files, calculation modules, plotting source and style are recorded in the figure manifest.
 
 [Scientific figures and documentation conventions](docs/FIGURE_STANDARD.md) · [Released figure sources](docs/SCIENTIFIC_FIGURES.json)
