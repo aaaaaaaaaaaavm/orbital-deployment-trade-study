@@ -146,3 +146,9 @@ Each figure is exported as editable SVG, embedded-font PDF and 300 dpi PNG.
 The local case files, calculation modules, plotting source and style are recorded in the figure manifest.
 
 [Scientific figures and documentation conventions](docs/FIGURE_STANDARD.md) · [Released figure sources](docs/SCIENTIFIC_FIGURES.json)
+
+## Version and case reference
+
+[Current VOLLEY case boundary](docs/VOLLEY_CASE.md) · [Citation](CITATION.cff) · [License](LICENSE) · [Attribution](NOTICE)
+
+[Publication rules and exact-payload checks](PUBLICATION_POLICY.md)

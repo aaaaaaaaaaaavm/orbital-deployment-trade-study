@@ -16,3 +16,7 @@ This repository carries copies of VOLLEY analysis code under reference/volley/,
 including the motor model. CC BY 4.0 does not license patent rights (section
 2(b)(2)), and that is deliberate: a patent-granting licence was considered for
 this repository and rejected on those grounds.
+
+Publication checker: adapted from VOLLEY/tools/prepublish_gate.py.
+Copyright (c) 2026 Adityavardhan Mishra; source identity is retained in the script.
+Repository and source-fixture licenses remain unchanged.
